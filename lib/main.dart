@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: HomePage());
+    return const MaterialApp(home: const HomePage());
   }
 }
 
@@ -72,7 +72,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeVisibleText() {
-    timer = Timer.periodic(Duration(seconds: 5), (timer) {
+    timer = Timer.periodic(const Duration(seconds: 5), (timer) {
       print("start visible " + DateTime.now().toString());
       setState(() {
         visible = true;
@@ -81,7 +81,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeColorleCircle11() {
-    timer = Timer.periodic(Duration(milliseconds: 6300), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 6300), (timer) {
       setState(() {
         colorCircle11 = Colors.white;
       });
@@ -89,7 +89,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeColorleCircle12() {
-    timer = Timer.periodic(Duration(milliseconds: 6600), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 6600), (timer) {
       setState(() {
         colorCircle12 = Colors.white;
       });
@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeColorleCircle21() {
-    timer = Timer.periodic(Duration(milliseconds: 8800), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 8800), (timer) {
       setState(() {
         colorCircle21 = Colors.white;
       });
@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeColorleCircle22() {
-    timer = Timer.periodic(Duration(milliseconds: 9300), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 9300), (timer) {
       setState(() {
         colorCircle22 = Colors.white;
       });
@@ -113,7 +113,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void showFirstCircle1() {
-    timer = Timer.periodic(Duration(milliseconds: 6500), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 6500), (timer) {
       setState(() {
         heightCirclre11 = 160;
         widthCirclre11 = 160;
@@ -122,7 +122,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void showSecondCircle1() {
-    timer = Timer.periodic(Duration(milliseconds: 6800), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 6800), (timer) {
       setState(() {
         heightCirclre12 = 160;
         widthCirclre12 = 160;
@@ -131,7 +131,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void showFirstCircle2() {
-    timer = Timer.periodic(Duration(milliseconds: 9000), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 9000), (timer) {
       setState(() {
         heightCirclre21 = 160;
         widthCirclre21 = 160;
@@ -140,7 +140,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void showSecondCircle2() {
-    timer = Timer.periodic(Duration(milliseconds: 9300), (timer) {
+    timer = Timer.periodic(const Duration(milliseconds: 9300), (timer) {
       setState(() {
         heightCirclre22 = 160;
         widthCirclre22 = 160;
@@ -149,7 +149,7 @@ class _HomePageState extends State<HomePage>
   }
 
   void changeWidthAndHeight() {
-    timer = Timer.periodic(Duration(seconds: 0), (timer) {
+    timer = Timer.periodic(const Duration(seconds: 0), (timer) {
       width = 0;
       height = 0;
     });
@@ -176,7 +176,7 @@ class _HomePageState extends State<HomePage>
             children: [
               Center(
                 child: AnimatedContainer(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   width: widthCirclre11,
                   height: heightCirclre11,
                   decoration: BoxDecoration(
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage>
               ),
               Center(
                 child: AnimatedContainer(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   width: widthCirclre12,
                   height: heightCirclre12,
                   decoration: BoxDecoration(
@@ -196,9 +196,9 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
               ),
-               Center(
+              Center(
                 child: AnimatedContainer(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   width: widthCirclre21,
                   height: heightCirclre21,
                   decoration: BoxDecoration(
@@ -207,9 +207,9 @@ class _HomePageState extends State<HomePage>
                   ),
                 ),
               ),
-               Center(
+              Center(
                 child: AnimatedContainer(
-                  duration: Duration(milliseconds: 400),
+                  duration: const Duration(milliseconds: 400),
                   width: widthCirclre22,
                   height: heightCirclre22,
                   decoration: BoxDecoration(
@@ -238,7 +238,7 @@ class _HomePageState extends State<HomePage>
                     borderRadius: BorderRadius.circular(250),
                     color: Colors.black,
                   ),
-                  duration: Duration(seconds: 5),
+                  duration: const Duration(seconds: 5),
                 ),
               )
             ],
